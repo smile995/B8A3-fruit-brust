@@ -1,13 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3-Fruit-Brust</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesone cdn -->
+    <script src="https://kit.fontawesome.com/2839849d98.js" crossorigin="anonymous"></script>
+    <!-- goggle font lato link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 
 </head>
-<body>
+
+<body class="lato-font">
+    <div class="rating rating-md">
+        <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#F85559]" checked />
+        <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-7" class="mask mask-star-2 bg-[#F85559]" />
+    </div>
+
+
+
+    
+        <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
+            <div class="flex gap-4">
+                <img src="./images/logo.png" alt="">
+                <h1 class="text-4xl text-white font-bold">Fruit Burst</h1>
+            </div>
+            <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 text-white">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Shop</a>
+                <a class="link link-hover">All Fruits</a>
+                <a class="link link-hover">Support</a>
+                <a class="link link-hover">My Account</a>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-4">
+                    <div class="text-white space-x-5">
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-apple"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
     
 </body>
+
 </html>
